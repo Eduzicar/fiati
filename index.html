@@ -29,7 +29,7 @@
     </script>
 
     <a-scene
-      mindar-image="imageTargetSrc:https://cdn.glitch.global/407dba80-f11a-48c8-a1cf-c790b02f8fc5/IMG_6501.jpg?v=1677445694539"
+      mindar-image="https://cdn.glitch.global/407dba80-f11a-48c8-a1cf-c790b02f8fc5/targets%20(2).mind?v=1677480612458"
       vr-mode-ui="enabled: false"
       device-orientation-permission-ui="enabled:false"
     >
@@ -39,7 +39,7 @@
           src="https://cdn.glitch.global/407dba80-f11a-48c8-a1cf-c790b02f8fc5/targets%20(2).mind?v=1677480612458"
         />
         <a-asset-item
-          id="atarig"
+          id="bic"
           src="https://cdn.glitch.global/407dba80-f11a-48c8-a1cf-c790b02f8fc5/BicAR.glb?v=1677445872077"
         ></a-asset-item>
       </a-assets>
@@ -53,13 +53,9 @@
           width="1"
           rotation="0 0 0"
         ></a-plane>
-        <a-gltf-model
-          rotation="0 0 0 "
-          position="0 0 0.1"
-          scale="0.005 0.005 0.005"
-          src="#atarig"
-        >
-        </a-gltf-model>
+        
+         <a-gltf-model rotation="0 0 0 " position="0 0 0.1" scale="0.005 0.005 0.005" src="#bic"
+          animation="property: position; to: 0 0.1 0.1; dur: 1000; easing: easeInOutQuad; loop: true; dir: alternate"></a-gltf-model>
       </a-entity>
       <a-entity camera></a-entity>
     </a-scene>
